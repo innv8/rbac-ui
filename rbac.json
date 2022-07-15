@@ -1,0 +1,173 @@
+{
+    "actions": [
+        "GET",
+        "POST",
+        "PUT",
+        "PATCH"
+    ],
+    "resources": [
+        {
+            "id": "logout",
+            "regex": "^/auth/logout$"
+        },
+        {
+            "id": "reset-password",
+            "regex": "^/auth/reset-password$"
+        },
+        {
+            "id": "features",
+            "regex": "^/ambulances/features$"
+        },
+        {
+            "id": "feature",
+            "regex": "^/ambulances/feature/[1-9]\\d*$"
+        },
+        {
+            "id": "owners",
+            "regex": "^/ambulances/owners$"
+        },
+        {
+            "id": "owner",
+            "regex": "^/ambulances/owner/[1-9]\\d*"
+        },
+        {
+            "id": "ambulances",
+            "regex": "^/ambulances$"
+        },
+        {
+            "id": "ambulance",
+            "regex": "^/ambulances/[1-9]\\d*$"
+        },
+        {
+            "id": "dispatches",
+            "regex": "^/dispatches$"
+        },
+        {
+            "id": "dispatch",
+            "regex": "^/dispatches/[1-9]\\d*$"
+        },
+        {
+            "id": "transactions",
+            "regex": "^/transactions$"
+        },
+        {
+            "id": "transaction",
+            "regex": "^/transactions/[1-9]\\d*$"
+        },
+        {
+            "id": "users",
+            "regex": "^/users$"
+        },
+        {
+            "id": "profile",
+            "regex": "^/users/profile$"
+        },
+        {
+            "id": "user",
+            "regex": "^/users/[1-9]\\d*"
+        }
+    ],
+    "roles": [
+        {
+            "id": "admin",
+            "grants": [
+                {
+                    "resource": "logout",
+                    "actions": [
+                        "POST"
+                    ]
+                },
+                {
+                    "resource": "reset-password",
+                    "actions": [
+                        "POST"
+                    ]
+                },
+                {
+                    "resource": "features",
+                    "actions": [
+                        "GET",
+                        "POST"
+                    ]
+                },
+                {
+                    "resource": "feature",
+                    "actions": [
+                        "PUT"
+                    ]
+                },
+                {
+                    "resource": "owners",
+                    "actions": [
+                        "GET",
+                        "POST"
+                    ]
+                },
+                {
+                    "resource": "owner",
+                    "actions": [
+                        "GET",
+                        "PUT"
+                    ]
+                },
+                {
+                    "resource": "ambulances",
+                    "actions": [
+                        "GET",
+                        "POST"
+                    ]
+                },
+                {
+                    "resource": "ambulance",
+                    "actions": [
+                        "GET",
+                        "PUT"
+                    ]
+                },
+                {
+                    "resource": "dispatches",
+                    "actions": [
+                        "GET"
+                    ]
+                },
+                {
+                    "resource": "dispatch",
+                    "actions": [
+                        "GET"
+                    ]
+                },
+                {
+                    "resource": "transactions",
+                    "actions": [
+                        "GET"
+                    ]
+                },
+                {
+                    "resource": "transaction",
+                    "actions": [
+                        "GET"
+                    ]
+                },
+                {
+                    "resource": "users",
+                    "actions": [
+                        "GET"
+                    ]
+                },
+                {
+                    "resource": "profile",
+                    "actions": [
+                        "GET",
+                        "PUT"
+                    ]
+                },
+                {
+                    "resource": "user",
+                    "actions": [
+                        "GET"
+                    ]
+                }
+            ]
+        }
+    ]
+}
